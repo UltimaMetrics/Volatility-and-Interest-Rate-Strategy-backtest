@@ -53,7 +53,7 @@ class FinancialData:
       
    # function to create a simple tear sheet using pyfolio
    def create_simple_tear_sheet(self):
-       pf.display(pf.create_simple_tear_sheet(self.data['trategy_returns'].diff()))
+       pf.display(pf.create_simple_tear_sheet(self.data['strategy_returns'].diff()))
 
 class BollingerBandBacktester(FinancialData):
     def prepare_indicators(self, window):
